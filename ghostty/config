@@ -75,7 +75,7 @@ window-decoration = false
 #palette = 14=#7aa89f
 #palette = 15=#dcd7ba
 
-#background = 1f1f28
+#background = 000000
 #foreground = dcd7ba
 #cursor-color = c8c093
 #selection-background = 2d4f67
