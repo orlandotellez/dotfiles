@@ -17,6 +17,11 @@ Para verificar la instalación podemos ir a revisar la carpeta /opt
 
     ls /opt/nvim-linux-x86_64
 
+Esto crea un "acceso directo" en una carpeta que el sistema ya conoce (/usr/local/bin). 
+```bash
+    sudo ln -s /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+```
+
 Verificamos igual la versión
 
     nvim --version
