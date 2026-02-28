@@ -1,0 +1,47 @@
+// instalar rofi: sudo apt update && sudo apt install rofi
+// se puede configurar el tema tambien con : rofi-theme-selector
+
+configuration {
+    modi: "run,drun,window";
+    icon-theme: "Papirus";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    sidebar-mode: true;
+}
+
+@theme "/dev/null" 
+
+* {
+    bg-col:  #000000; 
+    border-col: #333333;
+    selected-col: #222222;
+    fg-col: #FFFFFF;
+    
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+window {
+    height: 360px;
+    border: 3px;
+    border-color: @border-col;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 5px;
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element selected {
+    background-color:  @selected-col;
+    text-color: @fg-col;
+}
