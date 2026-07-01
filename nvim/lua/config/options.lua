@@ -2,6 +2,7 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 --
+vim.opt.wrap = true -- Habilitar wrap globalmente
 -- Versión traducida a Lua para mejor performance en Neovim
 _G.is_hex_color_light = function(color)
   local hex = color:gsub("#", "")
