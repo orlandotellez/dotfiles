@@ -1,0 +1,78 @@
+/* ==UserStyle==
+@name WhatsApp OLED Black Reinforced
+@namespace github.com/catppuccin/userstyles/styles/whatsapp
+@version 1.2.0
+@description Estilo OLED total para WhatsApp Web
+@author Gemini
+@preprocessor default
+==/UserStyle== */
+
+@-moz-document domain("web.whatsapp.com") {
+    :root, .dark {
+        --base: #050505;
+        --mantle: #010101;
+        --crust: #000000;
+        --surface1: #1a1a1a;
+        --text: #cdd6f4;
+        
+        /* Color Rojo Vino */
+        --wine-red: #5e1a1a; 
+        --wine-red-border: #802424;
+
+        /* Variables de fondo de WhatsApp */
+        --conversation-panel-background: #000000 !important;
+        --background-default: var(--base) !important;
+        --panel-background: var(--mantle) !important;
+        --panel-header-background: var(--crust) !important;
+        --app-background: var(--crust) !important;
+        
+        /* Variables WDS */
+        --WDS-systems-chat-background-wallpaper: #000000 !important;
+        --WDS-background-wash-plain: #000000 !important;
+        --WDS-background-wash-inset: #000000 !important;
+        --WDS-surface-default: var(--mantle) !important;
+    }
+
+    /* --- FONDO DEL CHAT --- */
+#main {
+    background-color: #000000 !important;
+}
+
+#main *[style*="background-image"] {
+    background-image: none !important;
+    background-color: #000000 !important;
+}
+
+.copyable-area, [data-tab="8"] {
+    background-color: #000000 !important;
+    background-image: none !important;
+}
+
+header, [data-testid="composer-footer"] {
+    background-color: var(--crust) !important;
+}
+    /* --- BURBUJAS --- */
+    
+    /* Mensajes RECIBIDOS (Gris oscuro) */
+    [data-testid="msg-container"].message-in > div > div {
+        background-color: var(--surface1) !important;
+        border: 1px solid #222 !important;
+    }
+
+    /* Mensajes ENVIADOS (Rojo Vino) */
+    [data-testid="msg-container"].message-out > div > div {
+        background-color: var(--wine-red) !important; /* El fondo de tu burbuja */
+        border: 1px solid var(--wine-red-border) !important; /* Un borde sutil para definirla */
+    }
+    
+    /* El "rabito" o cola de la burbuja enviada */
+    [data-testid="msg-container"].message-out span[data-icon="tail-out"] svg {
+        color: var(--wine-red) !important;
+    }
+
+    /* Color de los checks (leído) en color vino claro para que combine */
+    span[data-icon="msg-dblcheck-ack"] svg, 
+    span[data-icon="msg-check-ack"] svg {
+        color: #ff9999 !important; 
+    }
+}
