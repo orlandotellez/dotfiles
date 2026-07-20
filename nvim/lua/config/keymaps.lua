@@ -29,6 +29,6 @@ map("n", "<leader>h", function()
 end, { desc = "Saltar al Explorador a la derecha" })
 
 -- Para regresar al código (Izquierda)
-map("n", "<C-h>", "<C-w>h", { desc = "Ir a la izquierda" })
+-- map("n", "<C-h>", "<C-w>h", { desc = "Ir a la izquierda" })
 
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Buscar texto en el proyecto" })
