@@ -1,0 +1,251 @@
+/* ======================================
+   DISCORD OLED HARD FORCE
+====================================== */
+
+/* Root completo */
+#app-mount,
+.appMount__51fd7,
+.app_de4237,
+.bg__960e4 {
+    background: #000000 !important;
+}
+
+
+/* Layout principal */
+.base_c48ade,
+.content_c48ade,
+.chat_f75fb0,
+.chatContent_f75fb0,
+.container__133bf,
+.container__01ae2 {
+    background: #000000 !important;
+}
+
+
+/* Barra izquierda servidores */
+.guilds_c48ade,
+.tree_ef3116,
+.scroller_ef3116 {
+    background: #000000 !important;
+}
+
+
+/* Lista de canales */
+.sidebarList_c48ade,
+.sidebar_c48ade,
+.content__99f8c {
+    background: #000000 !important;
+}
+
+
+/* Header superior del canal */
+.title_f75fb0,
+.container__9293f,
+.children__9293f {
+    background: #000000 !important;
+}
+
+
+/* Zona mensajes */
+.chatContent_f75fb0,
+.scrollerContent__36d07,
+.scroller__36d07 {
+    background: #000000 !important;
+}
+
+
+/* Cada mensaje */
+.messageListItem__5126c {
+    background: transparent !important;
+}
+
+
+/* Caja de escribir */
+.form_f75fb0,
+.channelTextArea_f75fb0,
+.scrollableContainer__74017 {
+    background: #050505 !important;
+}
+
+
+/* Lista miembros derecha */
+.members_c8ffbb,
+.member_c8ffbb,
+.container_c8ffbb {
+    background: #000000 !important;
+}
+
+
+/* Hilos / Threads */
+.container__01ae2,
+.resizeHandle__01ae2 {
+    background: #000000 !important;
+}
+
+
+/* Búsqueda */
+.searchBar__97492 {
+    background: #050505 !important;
+}
+
+
+/* Menús contextuales */
+.menu_c1e9c4,
+.item_c1e9c4,
+.submenu_c1e9c4 {
+    background: #000000 !important;
+}
+
+
+/* Modal */
+.layer_d4b6c5,
+.root__49fc1,
+.modal__56ab4 {
+    background: #000000 !important;
+}
+
+
+/* Ventanas de perfil */
+.userProfileOuter_c69a7b,
+.userProfileInner_c69a7b,
+.userPopoutOuter_c69a7b {
+    background: #000000 !important;
+}
+
+
+/* Nitro / ajustes */
+.standardSidebarView__23e6b,
+.sidebarRegion__23e6b,
+.contentRegion__23e6b {
+    background: #000000 !important;
+}
+
+
+/* Ajustes internos */
+.contentRegionScroller__23e6b {
+    background: #000000 !important;
+}
+
+
+/* Quitar transparencias */
+[class*="background"],
+[class*="container"],
+[class*="scroller"] {
+    scrollbar-color: #222 #000 !important;
+}
+
+
+/* Scrollbar OLED */
+::-webkit-scrollbar {
+    width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #000 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222 !important;
+}
+
+/* ======================================
+   SIDEBAR CANALES OLED
+====================================== */
+
+/* Contenedor completo izquierdo */
+.sidebar_c48ade,
+.sidebarList_c48ade,
+.container__2637a {
+    background: #000000 !important;
+}
+
+
+/* Lista de canales del servidor */
+.container__2637a,
+.scroller__629e4,
+.scroller__629e4::-webkit-scrollbar {
+    background: #000000 !important;
+}
+
+
+/* Categorías */
+.containerDefault__29444,
+.containerDragBefore__29444,
+.containerDragAfter__29444 {
+    background: transparent !important;
+}
+
+
+/* Nombres de categorías */
+.name__29444 {
+    color: #9399b2 !important;
+}
+
+
+/* Canales */
+.wrapper__2ea32 {
+    background: transparent !important;
+}
+
+
+/* Hover canal */
+.wrapper__2ea32:hover {
+    background: #111111 !important;
+}
+
+
+/* Canal seleccionado */
+.modeSelected__2ea32 {
+    background: #181825 !important;
+}
+
+
+/* Canal activo con texto */
+.modeConnected__2ea32 {
+    background: #111111 !important;
+}
+
+
+/* Iconos canales */
+.icon__2ea32 {
+    color: #cdd6f4 !important;
+}
+
+
+/* DM / mensajes privados */
+.privateChannels__35e86,
+.scroller__99e7c {
+    background: #000000 !important;
+}
+
+
+/* Separador entre servidores y canales */
+.guildSeparator__252b6 {
+    background: #000000 !important;
+}
+
+
+/* Panel inferior (usuario, mute, ajustes) */
+.panels_c48ade,
+.container__37e49 {
+    background: #000000 !important;
+}
+
+
+/* Avatar + controles usuario */
+.container_e131a9 {
+    background: #000000 !important;
+}
+
+
+/* Scroll de canales */
+.scroller__629e4 {
+    scrollbar-color: #222 #000 !important;
+}
+
+/* Evitar flashes grises */
+* {
+    --background-primary: #000 !important;
+    --background-secondary: #000 !important;
+    --background-tertiary: #000 !important;
+}
