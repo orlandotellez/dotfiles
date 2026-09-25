@@ -1,0 +1,41 @@
+onboarding = false
+
+[theme]
+name = "terminal"
+auto_switch = false
+
+[ui]
+agent_panel_sort = "priority"
+
+# Estilo tmux: prefix ctrl+a (antes ctrl+a c = nueva terminal, ctrl+a h/j/k/l = moverse entre panes)
+# Navegación directa: ctrl+h/j/k/l van al plugin herdr-nvim-nav, que detecta si
+# el pane corre nvim (le pasa la tecla) o mueve el foco de herdr. En los bordes
+# de los splits de nvim salta al pane vecino de herdr (estilo vim-tmux-navigator).
+[keys]
+prefix = "ctrl+a"
+# Respaldo con prefix: ctrl+a + h/j/k/l siempre mueven panes, sin importar
+# lo que corra dentro (escape hatch si el plugin falla con nvim)
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+
+[[keys.command]]
+key = "ctrl+h"
+type = "plugin_action"
+command = "herdr-nvim-nav.left"
+
+[[keys.command]]
+key = "ctrl+j"
+type = "plugin_action"
+command = "herdr-nvim-nav.down"
+
+[[keys.command]]
+key = "ctrl+k"
+type = "plugin_action"
+command = "herdr-nvim-nav.up"
+
+[[keys.command]]
+key = "ctrl+l"
+type = "plugin_action"
+command = "herdr-nvim-nav.right"
