@@ -40,6 +40,36 @@ return {
         flavour = "mocha",
         transparent_background = true, -- 👈 CLAVE
         term_colors = true,
+        custom_highlights = function(colors)
+          return {
+            -- Solo keywords de control de flujo (if, else, for, while, return, break, continue, etc.)
+            ["@keyword"] = { fg = "#E11A45", bold = true },
+            ["@keyword.return"] = { fg = "#E11A45", bold = true },
+            ["@keyword.repeat"] = { fg = "#E11A45", bold = true },
+            ["@keyword.conditional"] = { fg = "#E11A45", bold = true },
+            ["@keyword.exception"] = { fg = "#E11A45", bold = true },
+            -- UI elements clave con tu accent
+            CursorLineNr = { fg = "#E11A45", bold = true },
+            Visual = { bg = "#E11A45", fg = "#1e1e2e" },
+            Search = { bg = "#E11A45", fg = "#1e1e2e" },
+            IncSearch = { bg = "#E11A45", fg = "#1e1e2e" },
+            MatchParen = { fg = "#E11A45", bold = true, underline = true },
+            -- Telescope
+            TelescopePromptPrefix = { fg = "#E11A45", bold = true },
+            TelescopeMatching = { fg = "#E11A45", bold = true },
+            TelescopeSelection = { fg = "#E11A45", bold = true },
+            -- Git signs
+            GitSignsAdd = { fg = "#E11A45" },
+            GitSignsChange = { fg = "#E11A45" },
+            -- Diagnostics: solo errors en tu color, warnings usan amarillo de Catppuccin
+            DiagnosticError = { fg = "#E11A45" },
+            DiagnosticVirtualTextError = { fg = "#E11A45" },
+            -- LSP references
+            LspReferenceText = { bg = "#313244", fg = "#E11A45" },
+            LspReferenceRead = { bg = "#313244", fg = "#E11A45" },
+            LspReferenceWrite = { bg = "#313244", fg = "#E11A45" },
+          }
+        end,
         integrations = {
           treesitter = true,
           native_lsp = {
