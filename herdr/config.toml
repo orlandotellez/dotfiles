@@ -4,20 +4,6 @@ onboarding = false
 name = "terminal"
 auto_switch = false
 
-[theme.custom]
-accent = "#E11A45"
-red = "#E11A45"
-selection_bg = "#E11A45"
-active_row_bg = "#E11A45"
-surface_dim = "#1A1A1A"
-surface0 = "#000000"
-surface1 = "#1A1A1A"
-overlay0 = "#ffffff"
-overlay1 = "#ffffff"
-text = "#ffffff"
-subtext0 = "#ffffff"
-panel_bg = "#000000"
-
 [ui]
 agent_panel_sort = "priority"
 tab_bar_position = "top"
@@ -48,3 +34,30 @@ command = "herdr-nvim-nav.up"
 key = "ctrl+l"
 type = "plugin_action"
 command = "herdr-nvim-nav.right"
+
+[[keys.command]]
+key = "prefix+t"
+type = "plugin_action"
+command = "herdr-theme-picker.open"
+
+
+[theme.custom]
+panel_bg = "#000000"
+sidebar_bg = "#000000"
+active_row_bg = "#E11A45"
+selection_bg = "#E11A45"
+surface0 = "#000000"
+surface1 = "#000000"
+surface_dim = "#000308"
+overlay0 = "#ffffff"
+overlay1 = "#000000"
+text = "#e6edf3"
+subtext0 = "#b1bac4"
+accent = "#E11A45"
+mauve = "#000000"
+green = "#E11A45"
+yellow = "#d29922"
+red = "#E11A45"
+blue = "#E11A45"
+teal = "#E11A45"
+peach = "#ffa198"
