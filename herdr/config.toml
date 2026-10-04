@@ -9,8 +9,9 @@ accent = "#E11A45"
 red = "#E11A45"
 selection_bg = "#E11A45"
 active_row_bg = "#E11A45"
-surface_dim = "#E11A45"
+surface_dim = "#000000"
 text = "#E6E6E6"
+panel_bg = "#000000"
 
 [ui]
 agent_panel_sort = "priority"
