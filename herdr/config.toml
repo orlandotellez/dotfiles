@@ -4,17 +4,20 @@ onboarding = false
 name = "terminal"
 auto_switch = false
 
+[theme.custom]
+accent = "#E11A45"
+red = "#E11A45"
+selection_bg = "#E11A45"
+active_row_bg = "#E11A45"
+surface_dim = "#E11A45"
+text = "#E6E6E6"
+
 [ui]
 agent_panel_sort = "priority"
+tab_bar_position = "top"
 
-# Estilo tmux: prefix ctrl+a (antes ctrl+a c = nueva terminal, ctrl+a h/j/k/l = moverse entre panes)
-# Navegación directa: ctrl+h/j/k/l van al plugin herdr-nvim-nav, que detecta si
-# el pane corre nvim (le pasa la tecla) o mueve el foco de herdr. En los bordes
-# de los splits de nvim salta al pane vecino de herdr (estilo vim-tmux-navigator).
 [keys]
 prefix = "ctrl+a"
-# Respaldo con prefix: ctrl+a + h/j/k/l siempre mueven panes, sin importar
-# lo que corra dentro (escape hatch si el plugin falla con nvim)
 focus_pane_left = "prefix+h"
 focus_pane_down = "prefix+j"
 focus_pane_up = "prefix+k"
