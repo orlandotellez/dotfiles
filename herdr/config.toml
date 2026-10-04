@@ -40,7 +40,6 @@ key = "prefix+t"
 type = "plugin_action"
 command = "herdr-theme-picker.open"
 
-
 [theme.custom]
 panel_bg = "#000000"
 sidebar_bg = "#000000"
@@ -49,7 +48,12 @@ selection_bg = "#E11A45"
 surface0 = "#000000"
 surface1 = "#000000"
 surface_dim = "#000308"
-overlay0 = "#ffffff"
+
+# Pasos para poner borde inactivo de color personalizado:
+# 1. Poner #1a1a1a en overlay0, ejecutar comando "herdr server reload-config".
+# 2. Poner #ffffff en overlay0, cerrar y abrir ghostty.
+overlay0 = "#ffffff" 
+
 overlay1 = "#000000"
 text = "#e6edf3"
 subtext0 = "#b1bac4"
